@@ -1,0 +1,12 @@
+{
+  "id": "example-ppt",
+  "title": "演示文稿标题",
+  "description": "这是一个演示文稿的简短描述",
+  "author": "作者姓名",
+  "date": "2026-02-10",
+  "tags": ["示例", "教程"],
+  "thumbnail": "thumbnail.png",
+  "slides": 10,
+  "language": "zh-CN",
+  "category": "教程"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "welcome-to-reveal",
+  "title": "欢迎使用 Reveal.js",
+  "description": "一个简单的示例演示文稿，展示 Reveal.js 的基本功能和使用方法",
+  "author": "PPT Repo",
+  "date": "2026-02-10",
+  "tags": ["示例", "入门", "reveal.js"],
+  "thumbnail": "thumbnail.png",
+  "slides": 6,
+  "language": "zh-CN",
+  "category": "教程"
+}

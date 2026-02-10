@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta -->
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR}}">
+    <meta name="date" content="{{DATE}}">
+    
+    <!-- Reveal.js Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 封面 -->
+            <section>
+                <h1>{{TITLE}}</h1>
+                <p>{{DESCRIPTION}}</p>
+                <p style="margin-top: 2em;">
+                    <small>{{AUTHOR}} | {{DATE}}</small>
+                </p>
+            </section>
+
+            <!-- 目录 -->
+            <section>
+                <h2>目录</h2>
+                <ol>
+                    <li>主题 1</li>
+                    <li>主题 2</li>
+                    <li>主题 3</li>
+                </ol>
+            </section>
+
+            <!-- 内容幻灯片 -->
+            <section>
+                <section>
+                    <h2>主题 1</h2>
+                    <p>内容...</p>
+                </section>
+                <section>
+                    <h3>子主题 1.1</h3>
+                    <p>详细内容...</p>
+                </section>
+            </section>
+
+            <!-- 代码示例 -->
+            <section>
+                <h2>代码示例</h2>
+                <pre><code class="javascript" data-trim data-line-numbers>
+function hello() {
+    console.log('Hello, Reveal.js!');
+}
+                </code></pre>
+            </section>
+
+            <!-- 结束页 -->
+            <section>
+                <h1>谢谢！</h1>
+                <p>有问题吗？</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+    
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/zoom/zoom.js"></script>
+
+    <!-- Initialize -->
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: true,
+            
+            // 插件
+            plugins: [ 
+                RevealMarkdown, 
+                RevealHighlight, 
+                RevealNotes,
+                RevealZoom
+            ]
+        });
+    </script>
+</body>
+</html>

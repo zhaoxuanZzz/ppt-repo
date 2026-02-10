@@ -1,0 +1,29 @@
+/* 自定义样式 */
+
+/* 全局字体优化 */
+.reveal {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+/* 代码块样式优化 */
+.reveal pre code {
+    max-height: 500px;
+    font-size: 0.9em;
+}
+
+/* 自定义颜色 */
+.reveal h1, .reveal h2, .reveal h3 {
+    text-transform: none;
+}
+
+/* 图片居中 */
+.reveal section img {
+    margin: 15px auto;
+    display: block;
+}
+
+/* 列表样式 */
+.reveal ul, .reveal ol {
+    display: block;
+    text-align: left;
+}

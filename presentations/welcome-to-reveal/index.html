@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta -->
+    <title>欢迎使用 Reveal.js</title>
+    <meta name="description" content="一个简单的示例演示文稿，展示 Reveal.js 的基本功能和使用方法">
+    <meta name="author" content="PPT Repo">
+    <meta name="date" content="2026-02-10">
+    
+    <!-- Reveal.js Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- 封面 -->
+            <section>
+                <h1>欢迎使用 Reveal.js</h1>
+                <p>一个简单的示例演示文稿，展示 Reveal.js 的基本功能和使用方法</p>
+                <p style="margin-top: 2em;">
+                    <small>PPT Repo | 2026-02-10</small>
+                </p>
+            </section>
+
+            <!-- 目录 -->
+            <section>
+                <h2>目录</h2>
+                <ol>
+                    <li>什么是 Reveal.js</li>
+                    <li>主要特性</li>
+                    <li>代码示例</li>
+                    <li>如何使用本项目</li>
+                </ol>
+            </section>
+
+            <!-- 内容幻灯片 -->
+            <section>
+                <section>
+                    <h2>什么是 Reveal.js</h2>
+                    <p>Reveal.js 是一个开源的 HTML 演示文稿框架</p>
+                    <ul>
+                        <li>📱 支持触摸和手势</li>
+                        <li>🎨 多种主题可选</li>
+                        <li>📝 支持 Markdown</li>
+                        <li>💻 代码高亮</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>为什么选择 Reveal.js？</h3>
+                    <p>与传统 PPT 相比，Reveal.js 有以下优势：</p>
+                    <ul>
+                        <li>✅ 易于版本控制（Git）</li>
+                        <li>✅ 可在线访问和分享</li>
+                        <li>✅ 支持嵌入网页内容</li>
+                        <li>✅ 完全自定义</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- 主要特性 -->
+            <section>
+                <h2>主要特性</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: left;">
+                    <div>
+                        <h3>🎯 导航</h3>
+                        <p>使用方向键或空格键导航</p>
+                    </div>
+                    <div>
+                        <h3>🔍 概览</h3>
+                        <p>按 ESC 键查看所有幻灯片</p>
+                    </div>
+                    <div>
+                        <h3>🔎 缩放</h3>
+                        <p>按住 Alt 键点击可放大</p>
+                    </div>
+                    <div>
+                        <h3>📝 演讲者备注</h3>
+                        <p>按 S 键打开演讲者视图</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 代码示例 -->
+            <section>
+                <h2>代码示例</h2>
+                <pre><code class="javascript" data-trim data-line-numbers="1-5|7-9">
+// 初始化 Reveal.js
+Reveal.initialize({
+    hash: true,
+    transition: 'slide',
+    controls: true
+});
+
+// 添加事件监听
+Reveal.on('slidechanged', event => {
+    console.log('切换到:', event.indexh);
+});
+                </code></pre>
+                <p><small>这段代码展示了如何初始化和监听事件</small></p>
+            </section>
+
+            <!-- 如何使用 -->
+            <section>
+                <h2>如何使用本项目</h2>
+                <ol>
+                    <li>复制 <code>templates/presentation-template.html</code></li>
+                    <li>在 <code>presentations/</code> 下创建新目录</li>
+                    <li>填写 <code>metadata.json</code> 元数据</li>
+                    <li>运行 <code>npm run build</code> 生成索引</li>
+                    <li>使用 <code>npm run dev</code> 预览</li>
+                </ol>
+            </section>
+
+            <!-- 结束页 -->
+            <section>
+                <h1>开始创建你的演示文稿吧！</h1>
+                <p>查看 README.md 了解更多信息</p>
+                <p style="margin-top: 2em;">
+                    <small>按 ESC 查看幻灯片概览</small>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js Core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+    
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/zoom/zoom.js"></script>
+
+    <!-- Initialize -->
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: true,
+            
+            // 插件
+            plugins: [ 
+                RevealMarkdown, 
+                RevealHighlight, 
+                RevealNotes,
+                RevealZoom
+            ]
+        });
+    </script>
+</body>
+</html>
