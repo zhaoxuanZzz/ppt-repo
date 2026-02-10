@@ -1,0 +1,12 @@
+{
+  "id": "openclaw-tutorial",
+  "title": "OpenClaw 教程 - 自托管AI代理网关",
+  "description": "OpenClaw完整教程：学习如何使用自托管网关连接WhatsApp、Telegram、Discord等聊天应用与AI编程助手",
+  "author": "zhaoxuanZzz",
+  "date": "2026-02-10",
+  "tags": ["AI", "Gateway", "OpenClaw", "Tutorial", "Self-hosted", "Messaging"],
+  "thumbnail": "thumbnail.png",
+  "slides": 15,
+  "language": "zh-CN",
+  "category": "Tutorial"
+}
