@@ -13,7 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
             min-height: 100vh;
             padding: 2rem;
         }
@@ -25,18 +25,21 @@
 
         header {
             text-align: center;
-            color: white;
             margin-bottom: 3rem;
+            padding: 2rem 0;
         }
 
         header h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            font-weight: 700;
+            color: #1976d2;
         }
 
         header p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            color: #424242;
+            font-weight: 400;
         }
 
         .search-bar {
@@ -48,11 +51,19 @@
         .search-bar input {
             width: 100%;
             max-width: 500px;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             font-size: 1rem;
-            border: none;
+            border: 2px solid #e0e0e0;
             border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: #2196f3;
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
         }
 
         .presentations {
@@ -63,15 +74,17 @@
 
         .ppt-card {
             background: white;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
         }
 
         .ppt-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(33, 150, 243, 0.25);
+            border-color: #2196f3;
         }
 
         .ppt-card a {
@@ -84,7 +97,9 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(90deg, #1976d2 0%, #2196f3 50%, #42a5f5 100%);
+            border-image-slice: 1;
         }
 
         .card-content {
@@ -93,12 +108,13 @@
 
         .card-content h3 {
             font-size: 1.5rem;
-            color: #333;
+            color: #212121;
             margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         .card-content p {
-            color: #666;
+            color: #616161;
             line-height: 1.6;
             margin-bottom: 1rem;
         }
@@ -107,7 +123,7 @@
             display: flex;
             justify-content: space-between;
             font-size: 0.9rem;
-            color: #999;
+            color: #757575;
             margin-bottom: 1rem;
         }
 
@@ -118,27 +134,30 @@
         }
 
         .tag {
-            background: #f0f0f0;
-            color: #667eea;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            color: #1976d2;
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
             font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #90caf9;
         }
 
         .empty-state {
             text-align: center;
-            color: white;
+            color: #424242;
             padding: 4rem 2rem;
         }
 
         .empty-state h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: #212121;
         }
 
         .empty-state p {
             font-size: 1.1rem;
-            opacity: 0.8;
+            color: #616161;
         }
 
         @media (max-width: 768px) {
